@@ -32,8 +32,7 @@ public class Login  extends JFrame implements ActionListener {
         try {  
             Class.forName("com.mysql.cj.jdbc.Driver"); 
             ct=DriverManager.getConnection("jdbc:mysql://localhost:3306/zrx?useSSL=false&serverTimezone=UTC","root","123456");  
-        } catch (Exception e) {  
-              
+        } catch (Exception e) {
             e.printStackTrace();  
         }  
                           
@@ -50,17 +49,6 @@ public class Login  extends JFrame implements ActionListener {
         jb2.addActionListener(this);  
         jb3.addActionListener(this);  
         //以上三个按钮的监听统一放在了actionPerformance()中  
-        //监听也可以是下边这种方式  
-//      jb3.addActionListener(new ActionListener()  
-//      {  
-//  
-//          @Override  
-//          public void actionPerformed(ActionEvent e) {  
-//              // TODO Auto-generated method stub                
-//              System.exit(0);  
-//          }  
-//            
-//      });  
           
         jrb1=new JRadioButton("教师");  
         jrb2=new JRadioButton("学生");  
